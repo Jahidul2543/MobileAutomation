@@ -11,7 +11,7 @@
     <parameter name="appName" value="gmap.apk"/>-->
 
     <parameter name="OS" value="Android"/>
-    <parameter name="appType" value="Phone"/>
+    <parameter name="platformType" value="Phone"/>
     <parameter name="deviceType" value="Emulator"/>
     <parameter name="deviceName" value="Android Emulator"/>
     <parameter name="version" value="9"/>

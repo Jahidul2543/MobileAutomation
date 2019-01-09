@@ -105,14 +105,14 @@ public class MobileAPI {
     public File appDirectory = null;
     public File findApp = null;
 
-    @Parameters({"OS","appType","deviceType", "deviceName","version", "moduleName","appName", "browserName"})
+    @Parameters({"OS","appType","deviceType", "deviceName","version", "moduleName","appName", "browserName","platformType", "url" })
     @BeforeMethod
     public void setUp(@Optional("android")String OS,@Optional("mobile") String appType,@Optional("real device") String deviceType,
                       @Optional("") String deviceName, @Optional("") String version,@Optional("") String moduleName,
-                      @Optional("") String appName,@Optional("") String browserName)throws IOException,InterruptedException{
+                      @Optional("") String appName,@Optional("") String browserName,@Optional("") String platformType, @Optional("") String url)throws IOException,InterruptedException{
 
         if(OS.equalsIgnoreCase("ios")){
-            if(appType.contains("iPhone")){
+            if(platformType.contains("iPhone")){
                 appDirectory = new File(moduleName+"src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
 
@@ -120,19 +120,21 @@ public class MobileAPI {
                     ad = setUpiOsEnv(deviceName,version);
                 }else if (deviceType.equalsIgnoreCase("Simulator")){
 
-                    ad = setUpiOsEnv(deviceName, version);
-                    /*if(!browserName.equalsIgnoreCase("NativeApp")) {
+                   /* ad = setUpiOsEnv(deviceName, version);*/
+
+                    if(appType.equalsIgnoreCase("Native")) {
                         ad = setUpiOsEnv(deviceName, version);
                     }
-                    else if(browserName.equalsIgnoreCase("Safari")){
+                    else if(appType.equalsIgnoreCase("iOSWeb")){
 
                         ad = setUpIosWebAppEnv(deviceName, version, browserName);
+                        ad.get(url);
 
-                    }*/
+                    }
                 }
 
 
-            }else if(appType.equalsIgnoreCase("iPad 2")){
+            }else if(platformType.equalsIgnoreCase("iPad 2")){
                 appDirectory = new File(moduleName+"src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
                 if(deviceType.contains("RealDevice")){
@@ -143,7 +145,7 @@ public class MobileAPI {
             }
 
         }else if(OS.equalsIgnoreCase("Android")){
-            if(appType.contains("Phone")){
+            if(platformType.contains("Phone")){
                 /*appDirectory = new File("src/app");
                 findApp = new File(appDirectory,appName);*/
                 if(deviceType.equalsIgnoreCase("RealDevice")){

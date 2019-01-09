@@ -11,12 +11,14 @@
     <parameter name="appName" value="gmap.apk"/>-->
 
     <parameter name="OS" value="ios"/>
-    <parameter name="appType" value="iPhone"/>
+    <parameter name="platformType" value="iPhone"/>
+    <parameter name="appType" value="iOSWeb"/>
     <parameter name="deviceType" value="Simulator"/>
     <parameter name="deviceName" value="iPhone XS Max"/>
     <parameter name="version" value="12.1"/>
     <parameter name="moduleName" value="webapps.automation.practice"/>
     <parameter name="browserName" value="Safari"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
 
 
     <!--{
