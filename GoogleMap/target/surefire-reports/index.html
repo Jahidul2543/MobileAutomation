@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Test_suite_on_Android_Phone" class="navigator-link">
+              <span class="suite-name border-skipped">Test suite on Android Phone</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span>C:\Users\Rabeka\IdeaProjects\Team_3_Mobile_Automation_Framework_Project\GoogleMap\target\test-classes\GoogleMapAppTestRunner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Test_suite_on_Android_Phone" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods,  19 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test_suite_on_Android_Phone" class="hide-methods skipped suite-Test_suite_on_Android_Phone"> (hide)</a> <!-- hide-methods skipped suite-Test_suite_on_Android_Phone -->
+                      <a href="#" panel-name="suite-Test_suite_on_Android_Phone" class="show-methods skipped suite-Test_suite_on_Android_Phone"> (show)</a> <!-- show-methods skipped suite-Test_suite_on_Android_Phone -->
+                    </span>
+                    <div class="method-list-content skipped suite-Test_suite_on_Android_Phone">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testAddAMissingPlace">testAddAMissingPlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testExplore">testExplore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testHelp">testHelp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testLocationSharing">testLocationSharing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testMapTypeSatellite">testMapTypeSatellite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testMapTypeTerrain">testMapTypeTerrain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testMenu">testMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testSearch">testSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testSelectRoutePage" class="method navigator-link" hash-for-method="testSelectRoute">testSelectRoute</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testSendFeedBack">testSendFeedBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testSetHomeAddressInYourPlace">testSetHomeAddressInYourPlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testSettings">testSettings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testStartDriving">testStartDriving</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testStartDrivingTo">testStartDrivingTo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testTermsOfService">testTermsOfService</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testTipsAndTricks">testTipsAndTricks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testYourCOntribution">testYourCOntribution</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testYourPlaces">testYourPlaces</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_suite_on_Android_Phone" title="testCases.testHomePage" class="method navigator-link" hash-for-method="testYourTimeline">testYourTimeline</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Test_suite_on_Android_Phone -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_suite_on_Android_Phone" class="panel Test_suite_on_Android_Phone">
+          <div class="suite-Test_suite_on_Android_Phone-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.testHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAMissingPlace">
+                  </a> <!-- testAddAMissingPlace -->
+                  <span class="method-name">testAddAMissingPlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExplore">
+                  </a> <!-- testExplore -->
+                  <span class="method-name">testExplore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHelp">
+                  </a> <!-- testHelp -->
+                  <span class="method-name">testHelp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLocationSharing">
+                  </a> <!-- testLocationSharing -->
+                  <span class="method-name">testLocationSharing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapTypeSatellite">
+                  </a> <!-- testMapTypeSatellite -->
+                  <span class="method-name">testMapTypeSatellite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapTypeTerrain">
+                  </a> <!-- testMapTypeTerrain -->
+                  <span class="method-name">testMapTypeTerrain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMenu">
+                  </a> <!-- testMenu -->
+                  <span class="method-name">testMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearch">
+                  </a> <!-- testSearch -->
+                  <span class="method-name">testSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSendFeedBack">
+                  </a> <!-- testSendFeedBack -->
+                  <span class="method-name">testSendFeedBack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetHomeAddressInYourPlace">
+                  </a> <!-- testSetHomeAddressInYourPlace -->
+                  <span class="method-name">testSetHomeAddressInYourPlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSettings">
+                  </a> <!-- testSettings -->
+                  <span class="method-name">testSettings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStartDriving">
+                  </a> <!-- testStartDriving -->
+                  <span class="method-name">testStartDriving</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStartDrivingTo">
+                  </a> <!-- testStartDrivingTo -->
+                  <span class="method-name">testStartDrivingTo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTermsOfService">
+                  </a> <!-- testTermsOfService -->
+                  <span class="method-name">testTermsOfService</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTipsAndTricks">
+                  </a> <!-- testTipsAndTricks -->
+                  <span class="method-name">testTipsAndTricks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testYourCOntribution">
+                  </a> <!-- testYourCOntribution -->
+                  <span class="method-name">testYourCOntribution</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testYourPlaces">
+                  </a> <!-- testYourPlaces -->
+                  <span class="method-name">testYourPlaces</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testYourTimeline">
+                  </a> <!-- testYourTimeline -->
+                  <span class="method-name">testYourTimeline</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_suite_on_Android_Phone-class-skipped -->
+          <div class="suite-Test_suite_on_Android_Phone-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.testSelectRoutePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectRoute">
+                  </a> <!-- testSelectRoute -->
+                  <span class="method-name">testSelectRoute</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_suite_on_Android_Phone-class-skipped -->
+        </div> <!-- panel Test_suite_on_Android_Phone -->
+        <div panel-name="test-xml-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Rabeka\IdeaProjects\Team_3_Mobile_Automation_Framework_Project\GoogleMap\target\test-classes\GoogleMapAppTestRunner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Test suite on Android Phone&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;deviceType&quot; value=&quot;Emulator&quot;/&gt;
+  &lt;parameter name=&quot;OS&quot; value=&quot;Android&quot;/&gt;
+  &lt;parameter name=&quot;appType&quot; value=&quot;Phone&quot;/&gt;
+  &lt;parameter name=&quot;appName&quot; value=&quot;gmap.apk&quot;/&gt;
+  &lt;parameter name=&quot;moduleName&quot; value=&quot;GoogleMap&quot;/&gt;
+  &lt;parameter name=&quot;deviceName&quot; value=&quot;Nexus&quot;/&gt;
+  &lt;parameter name=&quot;version&quot; value=&quot;5.0&quot;/&gt;
+  &lt;test name=&quot;Home page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.testHomePage&quot;/&gt;
+      &lt;class name=&quot;testCases.testSelectRoutePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Home page --&gt;
+  &lt;test name=&quot;Home page(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.testHomePage&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSettings&quot;/&gt;
+          &lt;include name=&quot;testYourCOntribution&quot;/&gt;
+          &lt;include name=&quot;testAddAMissingPlace&quot;/&gt;
+          &lt;include name=&quot;extentSetup&quot;/&gt;
+          &lt;include name=&quot;testSetHomeAddressInYourPlace&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;testHelp&quot;/&gt;
+          &lt;include name=&quot;testStartDrivingTo&quot;/&gt;
+          &lt;include name=&quot;testMenu&quot;/&gt;
+          &lt;include name=&quot;testYourTimeline&quot;/&gt;
+          &lt;include name=&quot;testExplore&quot;/&gt;
+          &lt;include name=&quot;testSendFeedBack&quot;/&gt;
+          &lt;include name=&quot;testYourPlaces&quot;/&gt;
+          &lt;include name=&quot;testTipsAndTricks&quot;/&gt;
+          &lt;include name=&quot;testSearch&quot;/&gt;
+          &lt;include name=&quot;testLocationSharing&quot;/&gt;
+          &lt;include name=&quot;testMapTypeTerrain&quot;/&gt;
+          &lt;include name=&quot;testStartDriving&quot;/&gt;
+          &lt;include name=&quot;testMapTypeSatellite&quot;/&gt;
+          &lt;include name=&quot;testTermsOfService&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.testHomePage --&gt;
+      &lt;class name=&quot;testCases.testSelectRoutePage&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSelectRoute&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.testSelectRoutePage --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Home page(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Test suite on Android Phone --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test suite on Android Phone</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Home page (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Home page(failed) (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test suite on Android Phone</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test suite on Android Phone</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_suite_on_Android_Phone');
+function tableData_Test_suite_on_Android_Phone() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSelectRoute')
+data.setCell(0, 2, 'testCases.testSelectRoutePage')
+data.setCell(0, 3, 5);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddAMissingPlace')
+data.setCell(1, 2, 'testCases.testHomePage')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMapTypeTerrain')
+data.setCell(2, 2, 'testCases.testHomePage')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSendFeedBack')
+data.setCell(3, 2, 'testCases.testHomePage')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testStartDrivingTo')
+data.setCell(4, 2, 'testCases.testHomePage')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testMapTypeSatellite')
+data.setCell(5, 2, 'testCases.testHomePage')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLocationSharing')
+data.setCell(6, 2, 'testCases.testHomePage')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSettings')
+data.setCell(7, 2, 'testCases.testHomePage')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testExplore')
+data.setCell(8, 2, 'testCases.testHomePage')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSetHomeAddressInYourPlace')
+data.setCell(9, 2, 'testCases.testHomePage')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSearch')
+data.setCell(10, 2, 'testCases.testHomePage')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testTermsOfService')
+data.setCell(11, 2, 'testCases.testHomePage')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testTipsAndTricks')
+data.setCell(12, 2, 'testCases.testHomePage')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testYourTimeline')
+data.setCell(13, 2, 'testCases.testHomePage')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testMenu')
+data.setCell(14, 2, 'testCases.testHomePage')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testStartDriving')
+data.setCell(15, 2, 'testCases.testHomePage')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testHelp')
+data.setCell(16, 2, 'testCases.testHomePage')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testYourPlaces')
+data.setCell(17, 2, 'testCases.testHomePage')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testYourCOntribution')
+data.setCell(18, 2, 'testCases.testHomePage')
+data.setCell(18, 3, 0);
+window.suiteTableData['Test_suite_on_Android_Phone']= { tableData: data, tableDiv: 'times-div-Test_suite_on_Android_Phone'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 ms</span>
+              <div id="times-div-Test_suite_on_Android_Phone">
+              </div> <!-- times-div-Test_suite_on_Android_Phone -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test suite on Android Phone</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.testSelectRoutePage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_suite_on_Android_Phone" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.testHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">extentSetup(org.testng.TestRunner@5398edd0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(Android, Phone, Emulator, Nexus, 5.0, GoogleMap, gmap.apk)</span>
+                <span class="method-start">3209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAMissingPlace</span>
+                <span class="method-start">8124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExplore</span>
+                <span class="method-start">8130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHelp</span>
+                <span class="method-start">8136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLocationSharing</span>
+                <span class="method-start">8144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapTypeSatellite</span>
+                <span class="method-start">8162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapTypeTerrain</span>
+                <span class="method-start">8169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMenu</span>
+                <span class="method-start">8174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearch</span>
+                <span class="method-start">8184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSendFeedBack</span>
+                <span class="method-start">8186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetHomeAddressInYourPlace</span>
+                <span class="method-start">8189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSettings</span>
+                <span class="method-start">8195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStartDriving</span>
+                <span class="method-start">8204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStartDrivingTo</span>
+                <span class="method-start">8212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTermsOfService</span>
+                <span class="method-start">8252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTipsAndTricks</span>
+                <span class="method-start">8259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testYourCOntribution</span>
+                <span class="method-start">8308 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testYourPlaces</span>
+                <span class="method-start">8311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testYourTimeline</span>
+                <span class="method-start">8322 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.testSelectRoutePage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSelectRoute</span>
+                <span class="method-start">8362 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
