@@ -14,6 +14,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -102,6 +103,7 @@ public class MobileAPI {
     }
 
     public static AppiumDriver ad = null;
+    public static WebDriver remoteWebDriver = null;
     public File appDirectory = null;
     public File findApp = null;
 
@@ -129,6 +131,10 @@ public class MobileAPI {
 
                         ad = setUpIosWebAppEnv(deviceName, version, browserName);
                         ad.get(url);
+
+                        /* remoteWebDriver = setUpIosWebAppEnv(deviceName, version, browserName);
+                        remoteWebDriver.get(url);*/
+
 
                     }
                 }
@@ -211,7 +217,9 @@ public class MobileAPI {
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         cap.setCapability(MobileCapabilityType.BROWSER_NAME, browserName);
 
-        ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+        /*remoteWebDriver  = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+        remoteWebDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
+        ad  = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return ad;
 
@@ -498,9 +506,9 @@ public class MobileAPI {
         return w(webElement);
     }*/
 
-    public static WebElement findElementByAccesablityId(String accessibilityId){
+    public static MobileElement findElementByAccesablityId(String accessibilityId){
 
-       WebElement web = ad.findElementByAccessibilityId(accessibilityId);
+       MobileElement web = (MobileElement) ad.findElementByAccessibilityId(accessibilityId);
        return web;
     }
 }

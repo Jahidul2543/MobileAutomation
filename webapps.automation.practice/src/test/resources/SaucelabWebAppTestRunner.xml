@@ -2,35 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test suite on Android Phone">
 
-    <!--<parameter name="OS" value="Android"/>
-    <parameter name="appType" value="Phone"/>
-    <parameter name="deviceType" value="RealDevice"/>
-    <parameter name="deviceName" value="Asus"/>
-    <parameter name="version" value="5.0"/>
-    <parameter name="moduleName" value="GoogleMap"/>
-    <parameter name="appName" value="gmap.apk"/>-->
-
     <parameter name="OS" value="ios"/>
     <parameter name="platformType" value="iPhone"/>
     <parameter name="appType" value="iOSWeb"/>
     <parameter name="deviceType" value="Simulator"/>
+  <!--  <parameter name="deviceName" value="iPhone 8"/>-->
     <parameter name="deviceName" value="iPhone XS Max"/>
     <parameter name="version" value="12.1"/>
     <parameter name="moduleName" value="webapps.automation.practice"/>
     <parameter name="browserName" value="Safari"/>
-    <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name="url" value="http://saucelabs.com/test/guinea-pig"/>
 
-
-    <!--{
-    "platformName": "Android",
-    "platformVersion": "7.0",
-    "deviceName": "Android Emulator",
-    "browserName": "Chrome"
-    }-->
 
     <test name="Home page" preserve-order="true">
         <classes>
-            <class name="HomePageTest"/>
+            <class name="SauceLabHomePageTest"/>
         </classes>
     </test>
 </suite>

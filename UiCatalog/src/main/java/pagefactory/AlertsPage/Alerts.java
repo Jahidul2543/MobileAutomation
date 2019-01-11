@@ -1,11 +1,18 @@
 package pagefactory.AlertsPage;
 
 import base.MobileAPI;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 /**
  * Created by mrahman on 1/15/17.
  */
 public class Alerts extends MobileAPI{
+
+    @iOSFindBy(xpath = "")
+    private MobileElement elemnt;
+
+
     public void showActionSheetSimple(){
         clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]");
     }
