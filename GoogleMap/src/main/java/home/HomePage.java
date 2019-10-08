@@ -5,14 +5,10 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.support.FindBy;
 
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.openqa.selenium.Keys.ENTER;
 
 public class HomePage extends MobileAPI {
 
@@ -144,7 +140,7 @@ public class HomePage extends MobileAPI {
         element.sendKeys(" Dhaka,Bangladesh");
         //Hit enter
         ad.tap(1,967,1841,1);
-        ad.lockScreen(1);
+      //  ad.lockScreen(1);
     }
 
     public void clickGoButton() {

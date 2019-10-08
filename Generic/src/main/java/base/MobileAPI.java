@@ -2,20 +2,19 @@ package base;
 
 import ExtentReport.ExtentManager;
 import ExtentReport.ExtentTestManager;
-import ExtentReport.TestLogger;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import io.appium.java_client.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
@@ -37,6 +36,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
+
 
 /**
  * Created by mrahman on 5/19/17.
@@ -167,11 +167,13 @@ public class MobileAPI {
                        else if(browserName.equalsIgnoreCase("Chrome")){
 
                         ad = setUpAndroidWebAppEnv(deviceName, version, browserName);
+                        ad.get(url);
 
-                    }
+                          }
                     else if (browserName.equalsIgnoreCase("Browser")){
 
                         ad = setUpAndroidWebAppEnv(deviceName, version, browserName);
+                        ad.get(url);
                     }
                 }
 
@@ -239,12 +241,24 @@ public class MobileAPI {
     }
 
     public AppiumDriver setUpAndroidWebAppEnv(String deviceName,String version, String browserName) throws MalformedURLException {
+       ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+      //  options.setBinary("/Users/jahidul/IdeaProjects/MobileAutomation/Generic/drivers/");
+
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
        // cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());\
         cap.setCapability(MobileCapabilityType.BROWSER_NAME, browserName);
+        cap.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_EXECUTABLE, "/Users/jahidul/IdeaProjects/MobileAutomation/Generic/drivers/chromedriver");
+       // cap.setCapability(ChromeOptions.CAPABILITY, options);
+        //cap.setCapability(AndroidMobileCapabilityType.CHROME_OPTIONS, options);
+        /**
+         * Experiment
+         * */
+        cap.setCapability("chromedriverDisableBuildCheck",true);
+        cap.setCapability("chromeOptions", options);
 
         ad = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -470,7 +484,7 @@ public class MobileAPI {
     }
 
     public void scrollAndClickByName(String locator){
-        ad.scrollTo(locator).click();
+       // ad.scrollTo(locator).click();
     }
 
     public void clickByXpath(String locator){
@@ -497,7 +511,7 @@ public class MobileAPI {
     }
     public void scrollToElement(AppiumDriver driver, String text){
         MobileElement we = (MobileElement) driver.findElementByXPath(text);
-        driver.scrollTo(we.getText());
+       // driver.scrollTo(we.getText());
     }
     /*public static MobileElement w(WebElement element) {
         return new MobileElement((RemoteWebElement) element, ad);

@@ -6,12 +6,23 @@
     <parameter name="platformType" value="iPhone"/>
     <parameter name="appType" value="iOSWeb"/>
     <parameter name="deviceType" value="Simulator"/>
-  <!--  <parameter name="deviceName" value="iPhone 8"/>-->
+
     <parameter name="deviceName" value="iPhone XS Max"/>
     <parameter name="version" value="12.1"/>
     <parameter name="moduleName" value="webapps.automation.practice"/>
     <parameter name="browserName" value="Safari"/>
     <parameter name="url" value="http://saucelabs.com/test/guinea-pig"/>
+
+    <!--<parameter name="OS" value="Android"/>
+    <parameter name="platformType" value="iPhone"/>
+    <parameter name="appType" value="iOSWeb"/>
+    <parameter name="deviceType" value="Emulator"/>
+
+    <parameter name="deviceName" value="Android Emulator"/>
+    <parameter name="version" value="7.0"/>
+    <parameter name="moduleName" value="webapps.automation.practice"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="url" value="http://saucelabs.com/test/guinea-pig"/>-->
 
 
     <test name="Home page" preserve-order="true">
