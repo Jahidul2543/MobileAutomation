@@ -132,7 +132,7 @@ public class HomePage extends MobileAPI {
         exploreGotIt.click();
         okButton.click();
         sleep(4);
-        setDestination.sendKeys("PeopleNTech, 32-72 Steinway St B02, Astoria,NY 11103", Keys.ENTER);
+        setDestination.sendKeys("Dhaka, BD", Keys.ENTER);
     }
 
     public void search() {

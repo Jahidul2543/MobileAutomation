@@ -16,6 +16,6 @@ public class SauceLabHomePageTest extends MobileAPI {
     public void loginTest() {
         sauceLabHomePage.comment();
         Assert.assertEquals("I am a div", sauceLabHomePage.getTextFromDiv());
-    }
+         }
 
-}
+         }

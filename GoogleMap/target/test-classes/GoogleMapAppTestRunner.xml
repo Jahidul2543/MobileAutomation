@@ -16,7 +16,7 @@
     <parameter name="deviceName" value="Android Emulator"/>
     <parameter name="version" value="7.0"/>
     <parameter name="moduleName" value="GoogleMap"/>
-    <parameter name="appName" value="ApiDemos-debug.apk"/>
+    <parameter name="appName" value="gmap.apk"/>
 
     <!--{
     "platformName": "Android",

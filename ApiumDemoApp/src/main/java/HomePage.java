@@ -10,12 +10,12 @@ public class HomePage extends MobileAPI {
     @FindBy(className = "android.widget.TextView")
     public List<WebElement> menuContents = new ArrayList<>();
 
-public void clcikAccessAbility(){
-    findElementByAccesablityId("Access'ibility").click();
-  }
+    public void clcikAccessAbility(){
+        findElementByAccesablityId("Access'ibility").click();
+    }
 
-  public void goToAnimation(){
-    menuContents.get(3).click();
-  }
+    public void goToAnimation(){
+        menuContents.get(3).click();
+    }
 
 }

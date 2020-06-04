@@ -137,6 +137,9 @@ public class MobileAPI {
 
 
                     }
+                    /*else if(appType.equalsIgnoreCase("Hybrid")){
+                        // implement necessary code
+                    }*/
                 }
 
 
