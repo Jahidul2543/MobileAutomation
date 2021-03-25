@@ -28,7 +28,6 @@
     <test name="Home page" preserve-order="true">
         <classes>
             <class name="HomePageTest"/>
-           <!-- <class name="testCases.SelectRoutePageTest"/>-->
         </classes>
     </test>
 </suite>
